@@ -2,11 +2,11 @@
 
 API::Basecamp - Perl 5 API wrapper for Basecamp
 
-[![Build Status](https://travis-ci.org/alnewkirk/API-Basecamp.png?branch=master)](https://travis-ci.org/alnewkirk/API-Basecamp)
+[![Build Status](https://travis-ci.org/AccessAbundant/API-Basecamp.png?branch=master)](https://travis-ci.org/AccessAbundant/API-Basecamp)
 
 # VERSION
 
-version 0.03
+version 0.02
 
 # SYNOPSIS
 
@@ -355,7 +355,7 @@ can be used to find more information. [https://github.com/basecamp/bcx-api/blob/
 The calendar\_events method returns a new instance representative of the API
 _Calendar Events_ resource requested. This method accepts a list of path
 segments which will be used in the HTTP request. The following documentation
-can be used to find more information. L<>.
+can be used to find more information. [https://github.com/basecamp/bcx-api/blob/master/sections/calendar\_events.md](https://github.com/basecamp/bcx-api/blob/master/sections/calendar_events.md).
 
 ## calendars
 
@@ -493,11 +493,3 @@ This software is copyright (c) 2014 by Al Newkirk.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 357:
-
-    An empty L<>

@@ -519,7 +519,7 @@ can be used to find more information. L<https://github.com/basecamp/bcx-api/blob
 The calendar_events method returns a new instance representative of the API
 I<Calendar Events> resource requested. This method accepts a list of path
 segments which will be used in the HTTP request. The following documentation
-can be used to find more information. L<>.
+can be used to find more information. L<https://github.com/basecamp/bcx-api/blob/master/sections/calendar_events.md>.
 
 =cut
 
