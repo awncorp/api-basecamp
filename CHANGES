@@ -1,7 +1,11 @@
 Changelog for API-Basecamp
 
-0.02 2015-06-11T06:12:03
+0.03 2015-07-01T15:37:09
  - Updated README and fixed broken POD.
+ - Initial commit.
+
+0.02 2015-05-22T12:52:33
+ - v0.02
  - Initial commit.
 
 0.01 2015-05-17T03:24:17

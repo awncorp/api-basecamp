@@ -1,12 +1,12 @@
 # NAME
 
-API::Basecamp - Perl 5 API wrapper for Basecamp
+API::Basecamp - Perl 5 API wrapper for Basecamp.com
 
 [![Build Status](https://travis-ci.org/AccessAbundant/API-Basecamp.png?branch=master)](https://travis-ci.org/AccessAbundant/API-Basecamp)
 
 # VERSION
 
-version 0.02
+version 0.03
 
 # SYNOPSIS
 

@@ -1,4 +1,4 @@
-# ABSTRACT: Perl 5 API wrapper for Basecamp
+# ABSTRACT: Perl 5 API wrapper for Basecamp.com
 package API::Basecamp;
 
 use API::Basecamp::Class;
@@ -12,31 +12,31 @@ use Scalar::Util ();
 
 has account => (
     is       => 'rw',
-    isa      => STRING,
+    isa      => Str,
     required => 1,
 );
 
 has identifier => (
     is       => 'rw',
-    isa      => STRING,
+    isa      => Str,
     default  => 'API::Basecamp (Perl)',
 );
 
 has username => (
     is       => 'rw',
-    isa      => STRING,
+    isa      => Str,
     required => 1,
 );
 
 has password => (
     is       => 'rw',
-    isa      => STRING,
+    isa      => Str,
     required => 1,
 );
 
 has version => (
     is       => 'rw',
-    isa      => INTEGER,
+    isa      => Int,
     default  => 1,
 );
 
