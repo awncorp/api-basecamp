@@ -1,6 +1,6 @@
 Changelog for API-Basecamp
 
-0.04 2015-09-28T04:04:22
+0.04 2015-09-28T04:07:42
  - Updated build.
  - Refactored to derive from API::Client.
 
