@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
     "Mojolicious" => "6.22",
     "namespace::autoclean" => "0.27"
   },
-  "VERSION" => "0.04",
+  "VERSION" => "0.05",
   "test" => {
     "TESTS" => "t/*.t"
   }

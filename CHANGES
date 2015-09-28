@@ -1,6 +1,11 @@
 Changelog for API-Basecamp
 
-0.04 2015-09-28T04:07:42
+0.05 2015-09-28T13:10:37
+ - Updated inconsistency in documentation.
+ - Updated dist.ini to generate META files.
+
+0.04 2015-09-28T04:07:47
+ - v0.04
  - Updated build.
  - Refactored to derive from API::Client.
 
