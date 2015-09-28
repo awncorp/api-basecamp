@@ -1,6 +1,11 @@
 Changelog for API-Basecamp
 
-0.03 2015-07-01T16:05:09
+0.04 2015-09-28T04:04:22
+ - Updated build.
+ - Refactored to derive from API::Client.
+
+0.03 2015-07-01T16:05:14
+ - v0.03
  - Refactored dependencies.
  - Updated README and fixed broken POD.
  - Initial commit.
@@ -12,4 +17,3 @@ Changelog for API-Basecamp
 0.01 2015-05-17T03:24:17
  - v0.01
  - Initial commit.
-
