@@ -1,14 +1,12 @@
 # ABSTRACT: Basecamp.com API Client
 package API::Basecamp;
 
-use namespace::autoclean -except => 'has';
-
 use Data::Object::Class;
-use Data::Object::Class::Syntax;
 use Data::Object::Signatures;
 
-use Data::Object qw(load);
-use Data::Object::Library qw(Str);
+use Data::Object::Library qw(
+    Str
+);
 
 extends 'API::Client';
 
@@ -18,25 +16,45 @@ our $DEFAULT_URL = "https://basecamp.com";
 
 # ATTRIBUTES
 
-has account  => rw;
-has password => rw;
-has username => rw;
+has account => (
+    is       => 'rw',
+    isa      => Str,
+    required => 1,
+);
 
-# CONSTRAINTS
+has password => (
+    is       => 'rw',
+    isa      => Str,
+    required => 1,
+);
 
-req account  => Str;
-req password => Str;
-req username => Str;
+has username => (
+    is       => 'rw',
+    isa      => Str,
+    required => 1,
+);
 
 # DEFAULTS
 
-def identifier => 'API::Basecamp (Perl)';
-def url        => method { load('Mojo::URL')->new($DEFAULT_URL) };
-def version    => 1;
+has '+identifier' => (
+    default  => 'API::Basecamp (Perl)',
+    required => 0,
+);
+
+has '+url' => (
+    default  => $DEFAULT_URL,
+    required => 0,
+);
+
+has '+version' => (
+    default  => 1,
+    required => 0,
+);
 
 # CONSTRUCTION
 
 after BUILD => method {
+
     my $username   = $self->username;
     my $password   = $self->password;
     my $account    = $self->account;
@@ -49,11 +67,13 @@ after BUILD => method {
     $url->userinfo($userinfo);
 
     return $self;
+
 };
 
 # METHODS
 
 method PREPARE ($ua, $tx, %args) {
+
     my $headers = $tx->req->headers;
     my $url     = $tx->req->url;
 
@@ -62,9 +82,11 @@ method PREPARE ($ua, $tx, %args) {
 
     # append path suffix
     $url->path("@{[$url->path]}.json") if $url->path !~ /\.json$/;
+
 }
 
 method resource (@segments) {
+
     # build new resource instance
     my $instance = __PACKAGE__->new(
         debug      => $self->debug,
@@ -87,6 +109,7 @@ method resource (@segments) {
 
     # return resource instance
     return $instance;
+
 }
 
 1;
